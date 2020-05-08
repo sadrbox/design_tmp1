@@ -30,27 +30,22 @@ a {
     }
 }
 
-.test {
-    // -m-container-width: $container-width;
-    // -m-content-width: $content-width;
-    // -m-space-gap: $space-gap;
-    // -m-column-widthh: $column-width;
-    // -m-grid-colmn-width: $grid-column-width;
-    // -m-grid-columnn: $grid-column;
-}
+
 
 // Styling
 .wrapper {
     // background: silver
-    margin: 0 auto;
+    // margin: 0 auto;
     // max-width: 1280px
-    max-width: $container-width + px;
-    height: 100vh;
+    // max-width: $container-width + px;
+    // height: 100vh;
     // display: none;
 }
 
 .container {
     // padding: 0 gap();
+    margin: 0 auto;
+    max-width: $container-width + px;
 }
 
 .header {
