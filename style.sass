@@ -1,0 +1,88 @@
+$responsive-width: 1280px
+$column-width: 64px
+
+body
+    // background-color: #DCDBD9
+    color: #2c2c2c
+    font: normal 100% Cambria, Georgia, serif
+
+.grid
+    margin: 0 auto
+    height: 0px
+    // width: 1280px // based on 1280px
+    max-width: $responsive-width + px
+    display: flex
+    opacity: .1
+    div
+        text-align: center
+        display: flex
+        align-items: center
+        justify-content: center
+        background: red
+        height: 100vh
+        width: $column-width //5% // 64px on 1280
+        margin-right: 1.25% // 16px on 1280
+    div:first-child
+        margin-left: .625%
+    div:last-child
+        margin-right: .625%
+
+// Styling
+
+.wrapper
+    // background: silver
+    margin: 0 auto
+    // max-width: 1280px
+    max-width: $responsive-width + px
+    height: 100vh
+
+.container
+    padding: 0 .625%
+.header
+    background: green
+    height: 80px
+    h1
+        font-size: 300%
+.main
+    margin: 20px 0
+    // background: green
+    display: flex
+    // flex-flow: row nowrap
+    .main__left
+        background: yellow
+        height: 400px
+        // width: 74.6835443% // 944px on 1264
+        width: containerWidth(12)
+        margin-right: .625%
+
+    .main__right
+        background: blue
+        display: flex
+
+        width: 24.0506329% // 304px on 1264
+        // width: 23.75%
+        margin-left: .625%
+        .aside
+            display: flex
+            flex-direction: column
+
+.footer
+    background: green
+    height: 100px
+
+.figure
+    // float: right
+    // margin-bottom: 0.5em
+    // margin-left: 2.53164557%
+    // width: part(6)
+    // width: part(5, .main__left.width)
+    background: red
+    // overflow: hidden
+img,
+embed,
+object,
+video
+    // width: 100%
+    max-width: 100%
+    // display: block
+    // max-width: percentage(64/1200)
