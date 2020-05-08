@@ -1,9 +1,16 @@
+@import "_func";
+
 $responsive-width: 1280;
 $column-width: 64px;
+
 body {
     // background-color: #DCDBD9
     color: #2c2c2c;
     font: normal 100% Cambria, Georgia, serif;
+}
+
+a {
+    color: blue;
 }
 
 .grid {
@@ -13,6 +20,7 @@ body {
     max-width: $responsive-width + px;
     display: flex;
     opacity: 0.1;
+
     div {
         text-align: center;
         display: flex;
@@ -23,9 +31,11 @@ body {
         width: $column-width;
         margin-right: 1.25%;
     }
+
     div:first-child {
         margin-left: 0.625%;
     }
+
     div:last-child {
         margin-right: 0.625%;
     }
@@ -47,6 +57,7 @@ body {
 .header {
     background: green;
     height: 80px;
+
     h1 {
         font-size: 300%;
     }
@@ -54,22 +65,31 @@ body {
 
 .main {
     margin: 20px 0;
-    // background: green
+    background: green;
     display: flex;
+
+    // div:first-child{
+    //     // margin-left: 0.625%;
+    // }
+    // div:last-child{
+    //     // margin-right: 0.625%;
+    // }
     // flex-flow: row nowrap
     .main__left {
         background: blue;
         height: 400px;
-        width: 74.6835443%; // 944px on 1264
-        // width: containerWidth(12);
+        // width: 74.6835443%; // 944px on 1264
+        width: col(12);
         margin-right: 0.625%;
     }
+
     .main__right {
         background: blue;
         display: flex;
-        width: 24.05063%;
-        // width: 23.75%
+        // width: 24.05063%;
+        width: col(4);
         margin-left: 0.625%;
+
         .aside {
             display: flex;
             flex-direction: column;
