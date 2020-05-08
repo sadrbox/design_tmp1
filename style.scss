@@ -1,8 +1,5 @@
 @import "_func";
 
-$responsive-width: 1280;
-$column-width: 64px;
-
 body {
     // background-color: #DCDBD9
     color: #2c2c2c;
@@ -17,9 +14,9 @@ a {
     margin: 0 auto;
     height: 0px;
     // width: 1280px // based on 1280px
-    max-width: $responsive-width + px;
+    max-width: $container-width + px;
     display: flex;
-    opacity: 0.1;
+    // opacity: 0.1;
 
     div {
         text-align: center;
@@ -28,17 +25,18 @@ a {
         justify-content: center;
         background: red;
         height: 100vh;
-        width: $column-width;
-        margin-right: 1.25%;
+        width: $column;
+        margin: 0 gap(); // make function
     }
+}
 
-    div:first-child {
-        margin-left: 0.625%;
-    }
-
-    div:last-child {
-        margin-right: 0.625%;
-    }
+.test {
+    // -m-container-width: $container-width;
+    // -m-content-width: $content-width;
+    // -m-space-gap: $space-gap;
+    // -m-column-widthh: $column-width;
+    // -m-grid-colmn-width: $grid-column-width;
+    // -m-grid-columnn: $grid-column;
 }
 
 // Styling
@@ -46,61 +44,107 @@ a {
     // background: silver
     margin: 0 auto;
     // max-width: 1280px
-    max-width: $responsive-width + px;
+    max-width: $container-width + px;
     height: 100vh;
+    // display: none;
 }
 
 .container {
-    padding: 0 0.625%;
+    // padding: 0 gap();
 }
 
 .header {
     background: green;
-    height: 80px;
 
-    h1 {
-        font-size: 300%;
+    .header__wrapper {
+        height: 80px;
+        display: flex;
+
+        .header__left {
+            background: blue;
+            // width: $content-width;
+            width: col(8);
+            margin: 0 gap();
+
+            h1 {
+                font-size: 300%;
+            }
+        }
+
+        .header__right {
+            background: blue;
+            width: col(8);
+            margin: 0 gap();
+        }
     }
 }
 
 .main {
     margin: 20px 0;
     background: green;
-    display: flex;
 
-    // div:first-child{
-    //     // margin-left: 0.625%;
-    // }
-    // div:last-child{
-    //     // margin-right: 0.625%;
-    // }
-    // flex-flow: row nowrap
-    .main__left {
-        background: blue;
-        height: 400px;
-        // width: 74.6835443%; // 944px on 1264
-        width: col(12);
-        margin-right: 0.625%;
-    }
-
-    .main__right {
-        background: blue;
+    .main__wrapper {
         display: flex;
-        // width: 24.05063%;
-        width: col(4);
-        margin-left: 0.625%;
+        // flex-direction: column;
+        height: 400px;
 
-        .aside {
-            display: flex;
-            flex-direction: column;
+        // div:first-child{
+        //     // margin-left: 0.625%;
+        // }
+        // div:last-child{
+        //     // margin-right: 0.625%;
+        // }
+        // flex-flow: row nowrap
+        .main__left {
+            background: blue;
+            // height: 400px;
+            // width: 74.6835443%; // 944px on 1264
+            // flex: 1;
+            width: col(12);
+            margin: 0 gap();
+        }
+
+        .main__right {
+            background: blue;
+            // display: flex;
+            // width: 24.05063%;
+            // flex:1;
+            width: col(4);
+            margin: 0 gap();
+
+            .aside {
+                display: flex;
+                flex-direction: column;
+            }
         }
     }
 }
 
 .footer {
     background: green;
-    height: 100px;
+
+    .footer__wrapper {
+        display: flex;
+        height: 100px;
+
+        .footer__left {
+            background: blue;
+            width: col(8);
+            margin: 0 gap();
+
+            h1 {
+                font-size: 300%;
+            }
+        }
+
+        .footer__right {
+            background: blue;
+            width: col(8);
+            margin: 0 gap();
+        }
+    }
 }
+
 
 .figure {
     // float: right
