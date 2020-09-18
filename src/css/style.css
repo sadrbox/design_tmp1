@@ -10,21 +10,17 @@ html, body {
   margin: 4px;
   padding: 4px;
   border-radius: 2px;
+  background: #eee;
 }
 
 .row {
   display: -ms-grid;
   display: grid;
-  -ms-flex-line-pack: stretch;
-      align-content: stretch;
-  grid-auto-flow: row;
 }
 
 .col {
   display: -ms-grid;
   display: grid;
-  -ms-flex-line-pack: stretch;
-      align-content: stretch;
   grid-auto-flow: column;
 }
 
@@ -48,5 +44,19 @@ input {
   border-bottom: 1px solid #DDD;
   -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.39), 0 -1px 1px #FFF, 0 1px 0 #FFF;
           box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.39), 0 -1px 1px #FFF, 0 1px 0 #FFF;
+}
+
+.message {
+  border-radius: 2px;
+  margin: 4px;
+  padding: 4px;
+  color: #006134;
+  border: 1px solid #005c29;
+  background: #b5fad4;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-row-align: start;
+      align-self: start;
+  font-weight: bold;
 }
 /*# sourceMappingURL=style.css.map */

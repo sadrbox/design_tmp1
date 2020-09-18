@@ -13,17 +13,18 @@ html, body {
   margin: 4px;
   padding: 4px;
   border-radius: 2px;
+  background: #eee;
 }
 
 .row {
   display: grid;
-  align-content: stretch;
-  grid-auto-flow: row;
+  //align-content: stretch;
+  //grid-auto-flow: row;
 }
 
 .col {
   display: grid;
-  align-content: stretch;
+  //align-content: stretch;
   grid-auto-flow: column;
 }
 
@@ -45,4 +46,17 @@ input {
   border-top: none;
   border-bottom: 1px solid #DDD;
   box-shadow: inset 0 1px 2px rgba(0,0,0,.39), 0 -1px 1px #FFF, 0 1px 0 #FFF;
+  ///background: #eee;
+}
+.message {
+  border-radius: 2px;
+  margin: 4px;
+  padding: 4px;
+  color: rgb(0, 97, 52);
+  border: 1px solid rgb(0, 92, 41);
+  background: rgb(181, 250, 212);
+ display: grid; 
+  //grid-auto-flow: row;
+  align-self: start;
+  font-weight: bold;
 }
