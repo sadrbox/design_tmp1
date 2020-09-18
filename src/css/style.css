@@ -1,139 +1,52 @@
-body {
+@import url(d:\Web\design_tmp1\src\css\reset.css);
+html, body {
   color: #2c2c2c;
-  font: normal 100% Cambria, Georgia, serif;
+  height: 100%;
+  font: normal 100% "Segoe UI", Tahoma;
 }
 
-a {
-  color: blue;
+.group {
+  border: 1px solid #ccc;
+  margin: 4px;
+  padding: 4px;
+  border-radius: 2px;
 }
 
-.grid {
-  margin: 0 auto;
-  height: 0px;
-  max-width: 1280px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+.row {
+  display: -ms-grid;
+  display: grid;
+  -ms-flex-line-pack: stretch;
+      align-content: stretch;
+  grid-auto-flow: row;
 }
 
-.grid div {
-  text-align: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  background: red;
-  height: 100vh;
-  width: 5%;
-  margin: 0 0.625%;
+.col {
+  display: -ms-grid;
+  display: grid;
+  -ms-flex-line-pack: stretch;
+      align-content: stretch;
+  grid-auto-flow: column;
 }
 
-.container {
-  margin: 0 auto;
-  max-width: 1280px;
+.field {
+  margin: 4px;
 }
 
-.header {
-  background: green;
+.field .field__label {
+  font-size: 10pt;
+  font-weight: bold;
 }
 
-.header .header__wrapper {
-  height: 80px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.header .header__wrapper .header__left {
-  background: blue;
-  width: 48.75%;
-  margin: 0 0.625%;
-}
-
-.header .header__wrapper .header__left h1 {
-  font-size: 300%;
-}
-
-.header .header__wrapper .header__right {
-  background: blue;
-  width: 48.75%;
-  margin: 0 0.625%;
-}
-
-.main {
-  margin: 20px 0;
-  background: green;
-}
-
-.main .main__wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  height: 400px;
-}
-
-.main .main__wrapper .main__left {
-  background: blue;
-  width: 73.75%;
-  margin: 0 0.625%;
-}
-
-.main .main__wrapper .main__right {
-  background: blue;
-  width: 23.75%;
-  margin: 0 0.625%;
-}
-
-.main .main__wrapper .main__right .aside {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-.footer {
-  background: green;
-}
-
-.footer .footer__wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100px;
-}
-
-.footer .footer__wrapper .footer__left {
-  background: blue;
-  width: 48.75%;
-  margin: 0 0.625%;
-}
-
-.footer .footer__wrapper .footer__left h1 {
-  font-size: 300%;
-}
-
-.footer .footer__wrapper .footer__right {
-  background: blue;
-  width: 48.75%;
-  margin: 0 0.625%;
-}
-
-.figure {
-  background: red;
-}
-
-img,
-embed,
-object,
-video {
-  max-width: 100%;
+input {
+  font-size: 10pt;
+  line-height: 1.2rem;
+  height: 16px;
+  padding: 8px;
+  border-radius: 3px;
+  border: 1px solid transparent;
+  border-top: none;
+  border-bottom: 1px solid #DDD;
+  -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.39), 0 -1px 1px #FFF, 0 1px 0 #FFF;
+          box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.39), 0 -1px 1px #FFF, 0 1px 0 #FFF;
 }
 /*# sourceMappingURL=style.css.map */
