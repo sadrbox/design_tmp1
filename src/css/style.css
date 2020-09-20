@@ -2,7 +2,7 @@
 html, body {
   color: #2c2c2c;
   height: 100%;
-  font: normal 100% "Segoe UI", Tahoma;
+  font: normal 1rem/1rem "Segoe UI", Tahoma;
 }
 
 .group {
@@ -29,13 +29,12 @@ html, body {
 }
 
 .field .field__label {
-  font-size: 10pt;
+  font-size: 80%;
   font-weight: bold;
 }
 
 input {
-  font-size: 10pt;
-  line-height: 1.2rem;
+  font-size: 80%;
   height: 16px;
   padding: 8px;
   border-radius: 3px;
@@ -49,7 +48,7 @@ input {
 .message {
   border-radius: 2px;
   margin: 4px;
-  padding: 4px;
+  padding: 8px;
   color: #006134;
   border: 1px solid #005c29;
   background: #b5fad4;
@@ -57,6 +56,6 @@ input {
   display: grid;
   -ms-grid-row-align: start;
       align-self: start;
-  font-weight: bold;
+  font-size: 80%;
 }
 /*# sourceMappingURL=style.css.map */

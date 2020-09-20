@@ -4,7 +4,7 @@ html, body {
   // background-color: #DCDBD9
   color: #2c2c2c;
   height:100%;
-  font: normal 100% "Segoe UI", Tahoma;
+  font: normal 1rem/1rem "Segoe UI", Tahoma;
 }
 
 .group {
@@ -31,13 +31,14 @@ html, body {
 .field {
   margin: 4px;
   .field__label {
-    font-size: 10pt;
+    font-size: 80%;
+    //line-height: 80%;
     font-weight: bold;
   }
 }
 input {
-  font-size: 10pt;
-  line-height: 1.2rem;
+  font-size: 80%;
+  //line-height: 1.2rem;
   height: 16px;
     
   padding: 8px;
@@ -51,12 +52,13 @@ input {
 .message {
   border-radius: 2px;
   margin: 4px;
-  padding: 4px;
+  padding: 8px;
   color: rgb(0, 97, 52);
   border: 1px solid rgb(0, 92, 41);
   background: rgb(181, 250, 212);
  display: grid; 
   //grid-auto-flow: row;
   align-self: start;
-  font-weight: bold;
+  //font-weight: bold;
+  font-size:80%; 
 }
