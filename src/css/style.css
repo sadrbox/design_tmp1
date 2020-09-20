@@ -16,11 +16,16 @@ html, body {
 .row {
   display: -ms-grid;
   display: grid;
+  -ms-flex-line-pack: start;
+      align-content: start;
+  grid-auto-flow: row;
 }
 
 .col {
   display: -ms-grid;
   display: grid;
+  -ms-flex-line-pack: start;
+      align-content: start;
   grid-auto-flow: column;
 }
 
@@ -48,14 +53,46 @@ input {
 .message {
   border-radius: 2px;
   margin: 4px;
-  padding: 8px;
+  padding: 16px;
   color: #006134;
   border: 1px solid #005c29;
   background: #b5fad4;
   display: -ms-grid;
   display: grid;
-  -ms-grid-row-align: start;
-      align-self: start;
   font-size: 80%;
+}
+
+.control__actions {
+  margin-top: 8px;
+  border-radius: 2px;
+  display: -ms-grid;
+  display: grid;
+  grid-auto-flow: column;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.button {
+  padding: 8px;
+  border-radius: 2px;
+  font-size: 80%;
+  font-weight: bold;
+  text-shadow: 0 1px 1px #000;
+  color: #fff;
+  margin: 4px;
+  -webkit-box-shadow: inset 0px 1px 0px 0px #7a8eb9;
+          box-shadow: inset 0px 1px 0px 0px #7a8eb9;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(5%, #637aad), to(#5972a7));
+  background: linear-gradient(to bottom, #637aad 5%, #5972a7 100%);
+  background-color: #637aad;
+  border: 1px solid #314179;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.button:hover {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(5%, #5972a7), to(#637aad));
+  background: linear-gradient(to bottom, #5972a7 5%, #637aad 100%);
+  background-color: #5972a7;
 }
 /*# sourceMappingURL=style.css.map */

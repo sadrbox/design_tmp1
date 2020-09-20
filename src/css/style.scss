@@ -14,16 +14,19 @@ html, body {
   padding: 4px;
   border-radius: 2px;
   background: #eee;
+  //grid-template-columns: auto minmax(0, 1fr);
 }
 
 .row {
   display: grid;
-  //align-content: stretch;
-  //grid-auto-flow: row;
+  align-content: start;
+  grid-auto-flow: row;
+  
 }
 
 .col {
   display: grid;
+  align-content: start;
   //align-content: stretch;
   grid-auto-flow: column;
 }
@@ -38,6 +41,7 @@ html, body {
 }
 input {
   font-size: 80%;
+  //font-weight: bold;
   //line-height: 1.2rem;
   height: 16px;
     
@@ -52,13 +56,53 @@ input {
 .message {
   border-radius: 2px;
   margin: 4px;
-  padding: 8px;
+  padding: 16px;
   color: rgb(0, 97, 52);
   border: 1px solid rgb(0, 92, 41);
   background: rgb(181, 250, 212);
- display: grid; 
-  //grid-auto-flow: row;
-  align-self: start;
+  display: grid; 
+  //grid-auto-rows: min-content;
+  //grid-template-columns: min-content;
+  
+  //grid-auto-flow: column;
+  //align-self: start;
   //font-weight: bold;
   font-size:80%; 
+  //margin-top:20px;
 }
+.control__actions {
+  margin-top: 8px;
+  border-radius: 2px;
+  display: grid;
+  grid-auto-flow: column;
+  align-content: center;
+  //grid-template-columns: auto minmax(0, 1fr);
+  //background: #ddd;
+  //border:1px solid transparent;
+  //justify-content: end;
+}
+.button {
+  //height: 16px;
+  padding: 8px;
+  border-radius: 2px; 
+  font-size: 80%;
+  font-weight: bold;
+  text-shadow: 0 1px 1px #000;
+  //text-transform: uppercase;
+  color: #fff;
+  margin: 4px;
+  	box-shadow:inset 0px 1px 0px 0px #7a8eb9;
+	background:linear-gradient(to bottom, #637aad 5%, #5972a7 100%);
+	background-color:#637aad;
+	border:1px solid #314179;
+	cursor:pointer;
+	//font-family:Arial;
+//font-size:13px;
+	//font-weight:bold;
+  //padding:6px 12px;
+
+  text-decoration:none;
+
+}
+.button:hover { 	background:linear-gradient(to bottom, #5972a7 5%, #637aad 100%);
+	background-color:#5972a7; }
