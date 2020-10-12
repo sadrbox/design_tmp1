@@ -1,8 +1,13 @@
-@import url(d:\Web\design_tmp1\src\css\reset.css);
-html, body {
+@import url("reset.css");
+@import url("../fonts/fonts.css");
+* {
+  letter-spacing: 0.05rem;
+}
+
+html,
+body {
   color: #2c2c2c;
-  height: 100%;
-  font: normal 1rem/1rem "Segoe UI", Tahoma;
+  font: normal 10pt/1rem "SSFUIDisplay";
 }
 
 .group {
@@ -34,20 +39,16 @@ html, body {
 }
 
 .field .field__label {
-  font-size: 80%;
+  line-height: 160%;
   font-weight: bold;
 }
 
 input {
-  font-size: 80%;
-  height: 16px;
+  line-height: 140%;
+  font-family: "SSFUIDisplay";
   padding: 8px;
-  border-radius: 3px;
-  border: 1px solid transparent;
-  border-top: none;
-  border-bottom: 1px solid #DDD;
-  -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.39), 0 -1px 1px #FFF, 0 1px 0 #FFF;
-          box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.39), 0 -1px 1px #FFF, 0 1px 0 #FFF;
+  border-radius: 2px;
+  border: 1px solid #ddd;
 }
 
 .message {
@@ -59,7 +60,6 @@ input {
   background: #b5fad4;
   display: -ms-grid;
   display: grid;
-  font-size: 80%;
 }
 
 .control__actions {
@@ -73,11 +73,11 @@ input {
 }
 
 .button {
+  line-height: 140%;
   padding: 8px;
   border-radius: 2px;
-  font-size: 80%;
-  font-weight: bold;
-  text-shadow: 0 1px 1px #000;
+  font-size: 100%;
+  text-shadow: 1px 1px 0px #000;
   color: #fff;
   margin: 4px;
   -webkit-box-shadow: inset 0px 1px 0px 0px #7a8eb9;
@@ -87,6 +87,7 @@ input {
   background-color: #637aad;
   border: 1px solid #314179;
   cursor: pointer;
+  font-family: "SSFUIDisplay";
   text-decoration: none;
 }
 
@@ -94,5 +95,11 @@ input {
   background: -webkit-gradient(linear, left top, left bottom, color-stop(5%, #5972a7), to(#637aad));
   background: linear-gradient(to bottom, #5972a7 5%, #637aad 100%);
   background-color: #5972a7;
+}
+
+.end {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
 }
 /*# sourceMappingURL=style.css.map */

@@ -1,10 +1,16 @@
-@import "reset.css";
+@import url("reset.css");
+@import url("../fonts/fonts.css");
 
-html, body {
+* {
+  letter-spacing: 0.05rem;
+}
+
+html,
+body {
   // background-color: #DCDBD9
   color: #2c2c2c;
-  height:100%;
-  font: normal 1rem/1rem "Segoe UI", Tahoma;
+  //height: 100%;
+  font: normal 10pt/1rem "SSFUIDisplay";
 }
 
 .group {
@@ -21,7 +27,6 @@ html, body {
   display: grid;
   align-content: start;
   grid-auto-flow: row;
-  
 }
 
 .col {
@@ -34,23 +39,25 @@ html, body {
 .field {
   margin: 4px;
   .field__label {
-    font-size: 80%;
-    //line-height: 80%;
+    // font-size: 90%;
+    line-height: 160%;
     font-weight: bold;
+    // text-shadow: 1px 1px 5px 10px red;
   }
 }
 input {
-  font-size: 80%;
+  //font-size: 90%;
   //font-weight: bold;
-  //line-height: 1.2rem;
-  height: 16px;
-    
+  line-height: 140%;
+  // height: 16px;
+
+  font-family: "SSFUIDisplay";
   padding: 8px;
-  border-radius: 3px;
-  border: 1px solid transparent;
-  border-top: none;
-  border-bottom: 1px solid #DDD;
-  box-shadow: inset 0 1px 2px rgba(0,0,0,.39), 0 -1px 1px #FFF, 0 1px 0 #FFF;
+  border-radius: 2px;
+  border: 1px solid #ddd;
+  // border-top: none;
+  // border-bottom: 1px solid #ddd;
+  // box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.39), 0 -1px 1px #fff, 0 1px 0 #fff;
   ///background: #eee;
 }
 .message {
@@ -60,14 +67,14 @@ input {
   color: rgb(0, 97, 52);
   border: 1px solid rgb(0, 92, 41);
   background: rgb(181, 250, 212);
-  display: grid; 
+  display: grid;
   //grid-auto-rows: min-content;
   //grid-template-columns: min-content;
-  
+
   //grid-auto-flow: column;
   //align-self: start;
   //font-weight: bold;
-  font-size:80%; 
+  //font-size: 80%;
   //margin-top:20px;
 }
 .control__actions {
@@ -83,26 +90,34 @@ input {
 }
 .button {
   //height: 16px;
+  // font-style: italic;
+  line-height: 140%;
   padding: 8px;
-  border-radius: 2px; 
-  font-size: 80%;
-  font-weight: bold;
-  text-shadow: 0 1px 1px #000;
+  border-radius: 2px;
+  font-size: 100%;
+  // font-weight: bold;
+  text-shadow: 1px 1px 0px #000;
   //text-transform: uppercase;
   color: #fff;
   margin: 4px;
-  	box-shadow:inset 0px 1px 0px 0px #7a8eb9;
-	background:linear-gradient(to bottom, #637aad 5%, #5972a7 100%);
-	background-color:#637aad;
-	border:1px solid #314179;
-	cursor:pointer;
-	//font-family:Arial;
-//font-size:13px;
-	//font-weight:bold;
+  box-shadow: inset 0px 1px 0px 0px #7a8eb9;
+  background: linear-gradient(to bottom, #637aad 5%, #5972a7 100%);
+  background-color: #637aad;
+  border: 1px solid #314179;
+  cursor: pointer;
+  font-family: "SSFUIDisplay";
+  //font-family:Arial;
+  //font-size:13px;
+  //font-weight:bold;
   //padding:6px 12px;
 
-  text-decoration:none;
-
+  text-decoration: none;
 }
-.button:hover { 	background:linear-gradient(to bottom, #5972a7 5%, #637aad 100%);
-	background-color:#5972a7; }
+.button:hover {
+  background: linear-gradient(to bottom, #5972a7 5%, #637aad 100%);
+  background-color: #5972a7;
+}
+
+.end {
+  justify-content: end;
+}
